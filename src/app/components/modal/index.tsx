@@ -12,7 +12,7 @@ export function Modal({ urlVideo, title }: ModalProps) {
   return (
     <div className="relative">
       <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 z-40 bg-[rgba(66,90,107,0.7)]" />
-      <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-[50%] top-[50%] z-50  h-[100%] max-h-[52.5rem] min-h-[40.5rem] w-[100%] max-w-[38.125rem] translate-x-[-50%] translate-y-[-50%]  overflow-hidden overflow-y-visible rounded-xl  bg-white mobile:rounded-none">
+      <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-[50%] top-[50%] z-50  h-[100%] max-h-[52.5rem] min-h-[40.5rem] w-[100%] max-w-[38.125rem] translate-x-[-50%] translate-y-[-50%]  overflow-y-visible rounded-xl bg-white  mobile:rounded-none desktop:overflow-hidden">
         <Dialog.Close
           className="absolute right-[21px] top-[18px] border-none text-4xl"
           asChild
