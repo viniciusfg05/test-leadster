@@ -12,7 +12,7 @@ export function Modal({ urlVideo, title }: ModalProps) {
   return (
     <div className="relative">
       <Dialog.Overlay className="data-[state=open]:animate-overlayShow fixed inset-0 z-40 bg-[rgba(66,90,107,0.7)]" />
-      <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-[50%] top-[50%] z-50  h-[100%] max-h-[52.5rem] min-h-[52.5rem] w-[100%] max-w-[38.125rem] translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-xl bg-white mobile:h-[48rem] mobile:overflow-y-auto ">
+      <Dialog.Content className="data-[state=open]:animate-contentShow fixed left-[50%] top-[50%] z-50  h-[100%] max-h-[52.5rem] min-h-[40.5rem] w-[100%] max-w-[38.125rem] translate-x-[-50%] translate-y-[-50%]  overflow-hidden overflow-y-visible rounded-xl  bg-white mobile:rounded-none">
         <Dialog.Close
           className="absolute right-[21px] top-[18px] border-none text-4xl"
           asChild
@@ -34,13 +34,13 @@ export function Modal({ urlVideo, title }: ModalProps) {
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
-          className="mobile:h-[14.5rem] mobile:w-[100vw]"
+          className="mobile:h-[14.5rem] mobile:w-[100%]"
         />
 
         <div className="p-8 mobile:p-4">
           <strong className="text-xl text-blue-900">Descrição</strong>
 
-          <div className="mx-auto my-[0.5rem] flex h-1 w-[100%]  border-b border-b-blue-300 " />
+          <div className="mobile:my-0.2rem mx-auto my-[0.5rem] flex h-1  w-[100%] border-b border-b-blue-300" />
 
           <Dialog.Description className="font-medium text-blue-900">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
