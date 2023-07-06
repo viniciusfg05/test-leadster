@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Decisões do projeto
+  - **Eslint:** Gosto de utilizar o eslint para padronizar o projeto com as regras do modulo `@rocketseat/eslint-config/react`, desta forma, independente da forma da escrita, à uma auto format.
+  - **Tailwindcss:** Decide usar o tailwindcss para estilização do projeto pela facilidade de customização e alta compatibilidade com Next 13
+  - **Prettier-plugin-tailwindcss:** Devido a decisão de utilização do tailwindcss, decidi usar este modulo para uma padronização das classes de estilização, desta forma as classe fica por ondem alfabética.
+  - **@radix-ui/react-dialog:** Para construção do modal, decide usar o Dialog do radix-ui, pela facilidade de implementação e acessibilidade.
 
-## Getting Started
+  Para criar o Hover no components de video, foi necessário criar um "::after" para criar o background transparente, tentei chegar o mais proximo da cor do layout.
+  Para criar o ícone de Play no components de video, crie uma "::before" que tem como conteúdo um .png.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# Organização do código
+  O código foi dividido em vários componentes e sub-componentes, garantindo que cada componente tem seu devido escopo, e como efeito colateral, facilidade em dar manutenção no projeto.
+  Por se tratar de uma landing page, decidi criar um pasta "components" que tem todos os components necessário para o construção da interface.
+  Os components que senti a necessidade de ter um sub-componentes, foi criando uma nova pasta de "components", de modo que cada código tenha seu escopo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Funcionalidades
+  - Modal
+  - Paginação
+  - Rotas para cada navegação
+  - Responsividade
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Como roda o projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  - npm install
+  - npm run dev
